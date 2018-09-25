@@ -170,7 +170,7 @@
 			if (cha.length >= 0 && cha.length <= 14) {
 				for (let j = 0; j < cha.length; j++) {
 					con = cha[j]
-					if (con.value.toLowerCase == mang.thangsinh) {
+					if (con.value.toLowerCase() == mang.thangsinh) {
 						con.selected = true
 					}
 				}
