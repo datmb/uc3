@@ -73,8 +73,7 @@
 				item[0].value = mang.thanhpho
 			}
 			if ((text.indexOf('nơi ở hiện tại') != -1 || text.indexOf('ghi rõ nếu khác') != -1 || text.indexOf('ghi rõ nếu khác với địa chỉ thường trú') != -1) || (placetext.indexOf('nơi ở hiện tạ') != -1 || placetext.indexOf('ghi rõ nếu khác') != -1 || placetext.indexOf('ghi rõ nếu khác với dịa chỉ thường trú') != -1)) {
-				item[0].value = mang.hochieu
-				delete mang.hochieu
+				item[0].value = mang.diachilienhe
 			}
 			if ((text.indexOf('hộ chiếu') != -1 || text.indexOf('số hộ chiếu') != -1 || text.indexOf('chiếu') != -1) || (placetext.indexOf('hộ chiếu') != -1 || placetext.indexOf('số hộ chiếu') != -1 || placetext.indexOf('chiếu') != -1) && mang.hochieu != undefined) {
 				item[0].value = mang.hochieu
