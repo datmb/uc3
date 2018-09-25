@@ -72,6 +72,10 @@
 			if ((text.indexOf('quận') != -1 || text.indexOf('huyện') != -1 || text.indexOf('thành phố') != -1) || (placetext.indexOf('quận') != -1 || placetext.indexOf('huyện') != -1 || placetext.indexOf('thành phố') != -1) && mang.thanhpho != undefined) {
 				item[0].value = mang.thanhpho
 			}
+			if ((text.indexOf('nơi ở hiện tại') != -1 || text.indexOf('ghi rõ nếu khác') != -1 || text.indexOf('ghi rõ nếu khác với địa chỉ thường trú') != -1) || (placetext.indexOf('nơi ở hiện tạ') != -1 || placetext.indexOf('ghi rõ nếu khác') != -1 || placetext.indexOf('ghi rõ nếu khác với dịa chỉ thường trú') != -1)) {
+				item[0].value = mang.hochieu
+				delete mang.hochieu
+			}
 			if ((text.indexOf('hộ chiếu') != -1 || text.indexOf('số hộ chiếu') != -1 || text.indexOf('chiếu') != -1) || (placetext.indexOf('hộ chiếu') != -1 || placetext.indexOf('số hộ chiếu') != -1 || placetext.indexOf('chiếu') != -1) && mang.hochieu != undefined) {
 				item[0].value = mang.hochieu
 				delete mang.hochieu
